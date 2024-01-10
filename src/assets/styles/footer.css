@@ -1,0 +1,145 @@
+.footer {
+  position: relative;
+  margin-top: 100px;
+}
+.footer .svg_line{
+    position: absolute;
+    top: -90px;
+}
+.footer .line_svg2{
+    position: absolute;
+    top: -136px;
+}
+.footer .list_footer .logo img {
+  width: 185px;
+  height: 187px;
+}
+.list_footer {
+  display: flex;
+  justify-content: space-between;
+}
+.list_footer .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+#line {
+  margin-top: 60px;
+  width: 100%;
+}
+.list_footer .menu li a {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.logo_socials {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.logo_socials svg{
+    cursor: pointer;
+}
+.socials h1 {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.socials{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.copyright p{
+    margin: 40px auto;
+    width: fit-content;
+    color: #FFF;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.82px;
+text-transform: uppercase;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px){
+  .footer .svg_line ,
+  .line_svg2{
+    display: none;
+  }
+  .list_footer{
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+  }
+  .list_footer .logo{
+    width: fit-content;
+    margin: auto;
+  }
+  .list_footer #line_footer{
+     display: none;
+  }
+  #line{
+    width: 100%;
+  }
+  .list_footer .menu{
+    align-items: center;
+  }
+  .socials
+  {
+    align-items: center;
+    margin-top: 15px;
+  }
+  .copyright p{
+    text-align: center;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 767.98px){
+  .footer .list_footer .logo{
+    position: relative;
+    height: 180px;
+    width: 180px;
+  }
+  .footer .list_footer .logo svg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  .list_footer .menu li a {
+    font-size: 13px;
+  }
+  .footer .svg_line,.line_svg2{
+display: none;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 769px) and (max-width: 991px){
+  .header .container .review_contact{
+    display: none;
+  }
+
+
+  .footer .svg_line,.line_svg2{
+    display: none;
+  }
+
+}
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+
+  .footer .svg_line,.line_svg2{
+    display: none;
+  }
+  .skills .list_skills{
+  grid-template-columns: auto auto auto auto auto;
+  }
+}
